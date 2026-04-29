@@ -31,6 +31,10 @@ var menudata={children:[
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"},
+{text:"All",url:"globals.html",children:[
+{text:"r",url:"globals.html#index_r"},
+{text:"t",url:"globals.html#index_t"},
+{text:"v",url:"globals.html#index_v"}]},
+{text:"Functions",url:"globals_func.html",children:[
+{text:"v",url:"globals_func.html#index_v"}]},
 {text:"Enumerations",url:"globals_enum.html"}]}]}]}

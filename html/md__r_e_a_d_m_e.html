@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Voxel3d 5VHiRab SDK Example: voxel3d_5VHiRab_sdk</title>
+<title>Voxel3d Example for 5VSTDON and 5VHiRab Devices: voxel3d_tools</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-sss.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Voxel3d 5VHiRab SDK Example<span id="projectnumber">&#160;V1.8</span>
+   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.13</span>
    </div>
   </td>
  </tr>
@@ -85,18 +85,15 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div><div class="header">
-  <div class="headertitle"><div class="title">voxel3d_5VHiRab_sdk</div></div>
+  <div class="headertitle"><div class="title">voxel3d_tools</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
-<p>Library and utilities for 5Voxel 5VHiRab all-in-one RGB-D &amp; thermal camera <br  />
+<p>Library and utilities for working with 5Voxel 5VSTDON &amp; 5VHiRab 3D-ToF Camera <br  />
 </p><ul>
-<li>For usage of voxel3d library <br  />
-<ol type="1">
-<li>Open voxel3d_5VHiRab_sdk/html/index.html in browser <br  />
-</li>
-<li>Click "Files -&gt; File List", then "voxel3d.h" for detail info <br  />
-</li>
+<li>For usage of voxel3d library<ol type="1">
+<li>Open voxel3d_tools/html/index.html in browser</li>
+<li>Click "Files", then "voxel3d.h" for detail info</li>
 </ol>
 </li>
 </ul>
@@ -105,18 +102,18 @@ $(function(){ initResizable(false); });
 Windows</h1>
 <p>Usage: voxel3d_tools.exe [options] <br  />
 </p>
-<p>Version 1.8 <br  />
+<p>Version 1.13 <br  />
  Options: <br  />
- &emsp;-h | &ndash;help&emsp;&emsp;&emsp;&emsp;&emsp;&#160;&#160;Print this message <br  />
- &emsp;-A | &ndash;set_auto_expo&emsp;set auto exposure mode <br  />
- &emsp;-b | &ndash;build_date&emsp;&emsp;&#160;&#160;&#160;show firmware build date <br  />
- &emsp;-i | &ndash;show_info&emsp;&emsp;&emsp;&#160;show device info <br  />
- &emsp;-S | &ndash;scan_dev&emsp;&emsp;&emsp;&#160;&#160;scan devices and list device S/N <br  />
- &emsp;-s | &ndash;dev_sn&emsp;&emsp;&emsp;&emsp;&#160;&#160;specify device S/N to access <br  />
- &emsp;-t | &ndash;get_conf&emsp;&emsp;&emsp;&#160;&#160;&#160;get confidence threshold <br  />
- &emsp;-T | &ndash;set_conf&emsp;&emsp;&emsp;&#160;&#160;&#160;set confidence threshold <br  />
- &emsp;-u | &ndash;fw_upgrade&emsp;&emsp;device firmware upgrade <br  />
- &emsp;-v | &ndash;version&emsp;&emsp;&emsp;&emsp;&#160;show lib &amp; firmware version <br  />
+ &emsp;-h | &ndash;help&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Print this message <br  />
+ &emsp;-C | &ndash;calib_save&emsp;&emsp;&emsp;Save calibration data to bin file [5VSTDON only] <br  />
+ &emsp;-c | &ndash;camera_info&emsp;&emsp;&#160;Show camera info <br  />
+ &emsp;-i | &ndash;show_info&emsp;&emsp;&emsp;&emsp;Show device info <br  />
+ &emsp;-S | &ndash;scan_dev&emsp;&emsp;&emsp;&#160;&#160;Scan devices and list device S/N <br  />
+ &emsp;-s | &ndash;dev_sn&emsp;&emsp;&emsp;&emsp;&#160;&#160;Specify device S/N to access <br  />
+ &emsp;-t | &ndash;display&emsp;&emsp;&emsp;&emsp;&emsp;Display camera temperature <br  />
+ &emsp;-u | &ndash;fw_upgrade&emsp;&emsp;&#160;Device firmware upgrade <br  />
+ &emsp;-U | &ndash;use_case&emsp;&emsp;&emsp;&#160;&#160;Switch use cases [5VSTDON only] <br  />
+ &emsp;-v | &ndash;version&emsp;&emsp;&emsp;&emsp;&#160;Show lib &amp; firmware version <br  />
 </p>
 <p>Example: <br  />
  voxel3d_tools.exe</p>
@@ -124,6 +121,10 @@ Windows</h1>
 Supported Deivce(s)</h2>
 <p>5Voxel 5VHiRab series <br  />
 </p><ol type="1">
+<li>5VSTDON03 <br  />
+</li>
+<li>5VSTDON04 <br  />
+</li>
 <li>5VHiRab887CF60 <br  />
 </li>
 <li>5VHiRab887CF80 <br  />
@@ -137,12 +138,14 @@ Supported Deivce(s)</h2>
 </ol>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Supported OS/Platform</h2>
-<p>$ Windows11 (Visual Studio Community 2022) <br  />
+<p>$ Windows 11 (Visual Studio Community 2022) <br  />
+ $ Ubuntu 18.04 (Jetson Nano) <br  />
 </p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Kernel module needed</h2>
+<p>N/A</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
-Build steps</h2>
+Build steps (Windows 11)</h2>
 <ol type="1">
 <li>Install Vistual Studion Community 2022 <br  />
 </li>
@@ -153,7 +156,23 @@ Build steps</h2>
 <li>Open a command window and go to following directory <br  />
  platform/win/Bin/x64-Release/voxel3d_tools <br  />
 </li>
-<li>Execute 'voxel3d_tools.exe -h' to show menu </li>
+<li>Execute 'voxel3d_tools.exe -h' to show menu <br  />
+</li>
+<li>Execute 'voxel3d_toosl.exe' to start camera streaming <br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Build steps (Linux)</h2>
+<ol type="1">
+<li>Go to platform/linux <br  />
+</li>
+<li>Execute 'make clean;make' <br  />
+</li>
+<li>Find 'voxel3d_tools' executable file at same location (platform/linux) <br  />
+</li>
+<li>Execute 'voxel3d_tools -h' to show menu <br  />
+</li>
+<li>Execute 'voxel3d_toosl' to start camera streaming </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

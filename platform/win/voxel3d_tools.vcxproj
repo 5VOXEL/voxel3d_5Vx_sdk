@@ -107,6 +107,7 @@ xcopy /y $(SolutionDir)..\..\lib\OpenCV\opencv-4.5.0\x64\vc15\bin\opencv_world45
   <ItemGroup>
     <ClCompile Include="..\..\src\getopt.c" />
     <ClCompile Include="..\..\src\voxel3d_app.cpp" />
+    <ClCompile Include="..\..\src\voxel3d_vd55h1_info.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

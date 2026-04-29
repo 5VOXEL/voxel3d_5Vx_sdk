@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Voxel3d 5VHiRab SDK Example: CamDevInfo Struct Reference</title>
+<title>Voxel3d Example for 5VSTDON and 5VHiRab Devices: CamDevInfo Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-sss.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Voxel3d 5VHiRab SDK Example<span id="projectnumber">&#160;V1.8</span>
+   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.13</span>
    </div>
   </td>
  </tr>
@@ -101,15 +101,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a0f4657d9e82a5b5f6f0933a865088dfa" id="r_a0f4657d9e82a5b5f6f0933a865088dfa"><td class="memItemLeft" align="right" valign="top"><a id="a0f4657d9e82a5b5f6f0933a865088dfa" name="a0f4657d9e82a5b5f6f0933a865088dfa"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>num_of_devices</b> = 0</td></tr>
 <tr class="separator:a0f4657d9e82a5b5f6f0933a865088dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af078a3fd8cb7d3b45308bf87171fed9f" id="r_af078a3fd8cb7d3b45308bf87171fed9f"><td class="memItemLeft" align="right" valign="top"><a id="af078a3fd8cb7d3b45308bf87171fed9f" name="af078a3fd8cb7d3b45308bf87171fed9f"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>product_sn</b> [MAX_SUPPORTED_CAMERA_MODULE][MAX_PRODUCT_SN_LEN] = {}</td></tr>
-<tr class="separator:af078a3fd8cb7d3b45308bf87171fed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6211ded8b6df0aee456b2279380253" id="r_aca6211ded8b6df0aee456b2279380253"><td class="memItemLeft" align="right" valign="top"><a id="aca6211ded8b6df0aee456b2279380253" name="aca6211ded8b6df0aee456b2279380253"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>dev_name</b> [MAX_SUPPORTED_CAMERA_MODULE][MAX_DEV_NAME_LEN] = {}</td></tr>
-<tr class="separator:aca6211ded8b6df0aee456b2279380253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d95811a6e695e25f1670975e2690418" id="r_a5d95811a6e695e25f1670975e2690418"><td class="memItemLeft" align="right" valign="top"><a id="a5d95811a6e695e25f1670975e2690418" name="a5d95811a6e695e25f1670975e2690418"></a>
-<a class="el" href="struct_cam_resolution.html">CamResolution</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolution</b> [MAX_SUPPORTED_CAMERA_MODULE] = {}</td></tr>
-<tr class="separator:a5d95811a6e695e25f1670975e2690418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3b877053d9da16a7bbd5e22624df0b" id="r_a9b3b877053d9da16a7bbd5e22624df0b"><td class="memItemLeft" align="right" valign="top"><a id="a9b3b877053d9da16a7bbd5e22624df0b" name="a9b3b877053d9da16a7bbd5e22624df0b"></a>
+<a class="el" href="struct_dev_info.html">DevInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dev_info</b> [MAX_SUPPORTED_CAMERA_MODULE]</td></tr>
+<tr class="separator:a9b3b877053d9da16a7bbd5e22624df0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7512a78bd834b1be25fa011e9b79671" id="r_af7512a78bd834b1be25fa011e9b79671"><td class="memItemLeft" align="right" valign="top"><a id="af7512a78bd834b1be25fa011e9b79671" name="af7512a78bd834b1be25fa011e9b79671"></a>
+<a class="el" href="struct_i_m_u_info.html">IMUInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>imu_info</b></td></tr>
+<tr class="separator:af7512a78bd834b1be25fa011e9b79671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure used in voxel3d_tof_scan() to fill up with scanned device number and product serial number for each device. </p>
