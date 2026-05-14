@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-sss.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.13</span>
+   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.14</span>
    </div>
   </td>
  </tr>
@@ -227,9 +227,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aef0c4e99033420b53e6be66fdc86e1c2" id="r_aef0c4e99033420b53e6be66fdc86e1c2"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2">voxel3d_tof_init</a> (char *dev_sn, <a class="el" href="struct_cam_init_settings.html">CamInitSettings</a> tof_setting)</td></tr>
 <tr class="memdesc:aef0c4e99033420b53e6be66fdc86e1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the initialization of ToF on sepcific 5Voxel device.  <br /></td></tr>
 <tr class="separator:aef0c4e99033420b53e6be66fdc86e1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05aee7bc0268e231554bbc1ff940d034" id="r_a05aee7bc0268e231554bbc1ff940d034"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05aee7bc0268e231554bbc1ff940d034">voxel3d_tof_queryframe</a> (char *dev_sn, unsigned short *depthmap, unsigned short *irmap, bool out_undistort)</td></tr>
-<tr class="memdesc:a05aee7bc0268e231554bbc1ff940d034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.  <br /></td></tr>
-<tr class="separator:a05aee7bc0268e231554bbc1ff940d034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010ac5c49186ffb4daefd00ebba4d4c3" id="r_a010ac5c49186ffb4daefd00ebba4d4c3"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010ac5c49186ffb4daefd00ebba4d4c3">voxel3d_tof_queryframe</a> (char *dev_sn, unsigned short *depthmap, unsigned short *irmap)</td></tr>
+<tr class="memdesc:a010ac5c49186ffb4daefd00ebba4d4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.  <br /></td></tr>
+<tr class="separator:a010ac5c49186ffb4daefd00ebba4d4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22c3e2f35533b98a62d7a0b58503d48" id="r_ac22c3e2f35533b98a62d7a0b58503d48"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac22c3e2f35533b98a62d7a0b58503d48">voxel3d_tof_generatePointCloud</a> (char *dev_sn, unsigned short *depthmap, float *xyz)</td></tr>
 <tr class="memdesc:ac22c3e2f35533b98a62d7a0b58503d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate pointcloud data based on input deptpmap and the calibration parameters from 5Voxel 5VHiRab camera.  <br /></td></tr>
 <tr class="separator:ac22c3e2f35533b98a62d7a0b58503d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +311,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abe50f9f591701f5fcb8be4c9c0f9919e" id="r_abe50f9f591701f5fcb8be4c9c0f9919e"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe50f9f591701f5fcb8be4c9c0f9919e">voxel3d_rgb_get_height</a> (char *dev_sn)</td></tr>
 <tr class="memdesc:abe50f9f591701f5fcb8be4c9c0f9919e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RGB frame height associated with dev_sn.  <br /></td></tr>
 <tr class="separator:abe50f9f591701f5fcb8be4c9c0f9919e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726f2cc269709f8cfddd470840361572" id="r_a726f2cc269709f8cfddd470840361572"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a726f2cc269709f8cfddd470840361572">voxel3d_rgb_get_hfov</a> (char *dev_sn)</td></tr>
+<tr class="memdesc:a726f2cc269709f8cfddd470840361572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RGB HFoV from 5voxel device.  <br /></td></tr>
+<tr class="separator:a726f2cc269709f8cfddd470840361572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f98a1a91e3b96430efb5a40cf921a83" id="r_a9f98a1a91e3b96430efb5a40cf921a83"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f98a1a91e3b96430efb5a40cf921a83">voxel3d_rgb_get_vfov</a> (char *dev_sn)</td></tr>
+<tr class="memdesc:a9f98a1a91e3b96430efb5a40cf921a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RGB VFoV from 5voxel device.  <br /></td></tr>
+<tr class="separator:a9f98a1a91e3b96430efb5a40cf921a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e14e89e5828359bad9dfa4adc6ac9e" id="r_aa0e14e89e5828359bad9dfa4adc6ac9e"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0e14e89e5828359bad9dfa4adc6ac9e">voxel3d_rgb_read_camera_info</a> (char *dev_sn, <a class="el" href="struct_camera_info.html">CameraInfo</a> *cam_info)</td></tr>
 <tr class="memdesc:aa0e14e89e5828359bad9dfa4adc6ac9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rgb camera intrinsic &amp; distortion information from 5voxel device.  <br /></td></tr>
 <tr class="separator:aa0e14e89e5828359bad9dfa4adc6ac9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1161,6 +1167,64 @@ false: failed to get library version </dd></dl>
 
 </div>
 </div>
+<a id="a726f2cc269709f8cfddd470840361572" name="a726f2cc269709f8cfddd470840361572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726f2cc269709f8cfddd470840361572">&#9670;&#160;</a></span>voxel3d_rgb_get_hfov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOXEL3D_API_DLL float voxel3d_rgb_get_hfov </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dev_sn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get RGB HFoV from 5voxel device. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Call this function after <a class="el" href="#afe5e1fd4006fc93c9999e9ae6e51646b" title="Perform the initialization of RGB on 5Voxel device.">voxel3d_rgb_init()</a> is completed and successfully, otherwise, it returns false </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&gt; 0: calculated RGB HFoV </dd>
+<dd>
+&lt;=0: failed to get RGB HFoV </dd></dl>
+
+</div>
+</div>
+<a id="a9f98a1a91e3b96430efb5a40cf921a83" name="a9f98a1a91e3b96430efb5a40cf921a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f98a1a91e3b96430efb5a40cf921a83">&#9670;&#160;</a></span>voxel3d_rgb_get_vfov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOXEL3D_API_DLL float voxel3d_rgb_get_vfov </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dev_sn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get RGB VFoV from 5voxel device. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Call this function after <a class="el" href="#afe5e1fd4006fc93c9999e9ae6e51646b" title="Perform the initialization of RGB on 5Voxel device.">voxel3d_rgb_init()</a> is completed and successfully, otherwise, it returns false </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&gt; 0: calculated RGB VFoV </dd>
+<dd>
+&lt;=0: failed to get RGB VFoV </dd></dl>
+
+</div>
+</div>
 <a id="a551d67e029d247a5142fe5fa879188e4" name="a551d67e029d247a5142fe5fa879188e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a551d67e029d247a5142fe5fa879188e4">&#9670;&#160;</a></span>voxel3d_rgb_get_width()</h2>
 
@@ -1443,7 +1507,7 @@ false: failed to set rectified mode </dd></dl>
 <p>The unit of x/y/z is meter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">depthmap</td><td>pointer of Depth frame filled by <a class="el" href="#a05aee7bc0268e231554bbc1ff940d034" title="Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.">voxel3d_tof_queryframe()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">depthmap</td><td>pointer of Depth frame filled by <a class="el" href="#a010ac5c49186ffb4daefd00ebba4d4c3" title="Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.">voxel3d_tof_queryframe()</a> </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>pointer of user-allocated buffer for pointcloud frame storage </td></tr>
   </table>
   </dd>
@@ -1939,7 +2003,7 @@ Others: temperature in degree C </dd></dl>
 </div><div class="memdoc">
 
 <p>Perform the initialization of ToF on sepcific 5Voxel device. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This function has to be called before <a class="el" href="#a05aee7bc0268e231554bbc1ff940d034" title="Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.">voxel3d_tof_queryframe()</a>, otherwise the query will fail </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function has to be called before <a class="el" href="#a010ac5c49186ffb4daefd00ebba4d4c3" title="Grab a depth &amp; ir frame from 5Voxel 5VHiRab camera.">voxel3d_tof_queryframe()</a>, otherwise the query will fail </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N, which can be read from the label on 5VHiRab device or from result of <a class="el" href="#a1cf51682aa09957509a451ea80c68836" title="Perform the scan of 5Voxel devices.">voxel3d_scan()</a>. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
@@ -1953,8 +2017,8 @@ Others: temperature in degree C </dd></dl>
 
 </div>
 </div>
-<a id="a05aee7bc0268e231554bbc1ff940d034" name="a05aee7bc0268e231554bbc1ff940d034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05aee7bc0268e231554bbc1ff940d034">&#9670;&#160;</a></span>voxel3d_tof_queryframe()</h2>
+<a id="a010ac5c49186ffb4daefd00ebba4d4c3" name="a010ac5c49186ffb4daefd00ebba4d4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010ac5c49186ffb4daefd00ebba4d4c3">&#9670;&#160;</a></span>voxel3d_tof_queryframe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1972,12 +2036,7 @@ Others: temperature in degree C </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned short *</td>          <td class="paramname"><span class="paramname"><em>irmap</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>out_undistort</em></span>&#160;)</td>
+          <td class="paramtype">unsigned short *</td>          <td class="paramname"><span class="paramname"><em>irmap</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1987,9 +2046,8 @@ Others: temperature in degree C </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">depthmap</td><td>pointer of user-allocated buffer for Depth frame storage Buffer size shall be TOF_DEPTH_ONLY_FRAME_SIZE (in bytes) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">irmap</td><td>pointer of user-allocated buffer for IR frame storage Buffer size shall be TOF_IR_ONLY_FRAME_SIZE (in bytes) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_undistort</td><td>enable/disable undistortion of output depthmap &amp; irmap Set to "true" for pointcloud query or RGB-D fusion </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">depthmap</td><td>pointer of user-allocated buffer for undistorted Depth frame storage Buffer size shall be TOF_DEPTH_ONLY_FRAME_SIZE (in bytes) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">irmap</td><td>pointer of user-allocated buffer for undistorted IR frame storage Buffer size shall be TOF_IR_ONLY_FRAME_SIZE (in bytes) </td></tr>
   </table>
   </dd>
 </dl>

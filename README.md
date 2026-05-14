@@ -41,6 +41,7 @@ Supported OS/Platform
 -------------------------------------------------------------------------------
 $ Windows 11 (Visual Studio Community 2022)  
 $ Ubuntu 18.04 (Jetson Nano)  
+$ Ubuntu 22.04 (x86_64)  
   
   
 Kernel module needed
@@ -57,13 +58,12 @@ Build steps (Windows 11)
 5. Execute 'voxel3d_tools.exe -h' to show menu  
 6. Execute 'voxel3d_toosl.exe' to start camera streaming  
 
-Build steps (Linux)
+Build steps (Ubuntu)
 -------------------------------------------------------------------------------
 Preparation  
 - To rebuild example, libopencv-dev is required. If host doesn't have, do
   'sudo apt install libopencv-dev'  
   
-Build steps  
 1. Go to platform/linux  
 2. Execute 'make clean;make'  
 3. Find 'voxel3d_tools' executable file at same location (platform/linux)   

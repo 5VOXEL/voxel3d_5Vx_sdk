@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Voxel3d Example for 5VSTDON and 5VHiRab Devices: voxel3d_tools</title>
+<title>Voxel3d Example for 5VSTDON and 5VHiRab Devices: voxel3d_5Vx_sdk</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-sss.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.13</span>
+   <div id="projectname">Voxel3d Example for 5VSTDON and 5VHiRab Devices<span id="projectnumber">&#160;V1.14</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,7 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div><div class="header">
-  <div class="headertitle"><div class="title">voxel3d_tools</div></div>
+  <div class="headertitle"><div class="title">voxel3d_5Vx_sdk</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
@@ -140,6 +140,7 @@ Supported Deivce(s)</h2>
 Supported OS/Platform</h2>
 <p>$ Windows 11 (Visual Studio Community 2022) <br  />
  $ Ubuntu 18.04 (Jetson Nano) <br  />
+ $ Ubuntu 22.04 (x86_64) <br  />
 </p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Kernel module needed</h2>
@@ -162,7 +163,12 @@ Build steps (Windows 11)</h2>
 </li>
 </ol>
 <h2><a class="anchor" id="autotoc_md7"></a>
-Build steps (Linux)</h2>
+Build steps (Ubuntu)</h2>
+<p>Preparation <br  />
+</p><ul>
+<li>To rebuild example, libopencv-dev is required. If host doesn't have, do 'sudo apt install libopencv-dev' <br  />
+</li>
+</ul>
 <ol type="1">
 <li>Go to platform/linux <br  />
 </li>

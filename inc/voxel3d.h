@@ -213,19 +213,16 @@ extern "C" VOXEL3D_API_DLL int voxel3d_tof_init(char *dev_sn, CamInitSettings to
  * @warning     Call voxel3d_tof_init() to initialize specific device before query
  * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
  *                      initialize the 1st scanned device
- * @param[out]  depthmap: pointer of user-allocated buffer for Depth frame storage
+ * @param[out]  depthmap: pointer of user-allocated buffer for undistorted Depth frame storage
  *                        Buffer size shall be TOF_DEPTH_ONLY_FRAME_SIZE (in bytes)
- * @param[out]  irmap: pointer of user-allocated buffer for IR frame storage
+ * @param[out]  irmap: pointer of user-allocated buffer for undistorted IR frame storage
  *                     Buffer size shall be TOF_IR_ONLY_FRAME_SIZE (in bytes)
- * @param[in]   out_undistort: enable/disable undistortion of output depthmap & irmap
- *                             Set to "true" for pointcloud query or RGB-D fusion 
  * @return      > 0: current frame count (1 ~ UINT_MAX)
  * @return      = 0: no new frame from device
  */
 extern "C" VOXEL3D_API_DLL unsigned int voxel3d_tof_queryframe(char* dev_sn,
                                                            unsigned short *depthmap,
-                                                           unsigned short *irmap,
-                                                           bool out_undistort);
+                                                           unsigned short *irmap);
 
 
 /**
@@ -612,6 +609,30 @@ extern "C" VOXEL3D_API_DLL int voxel3d_rgb_get_width(char* dev_sn);
  * @return      < 0: error code
  */
 extern "C" VOXEL3D_API_DLL int voxel3d_rgb_get_height(char* dev_sn);
+
+
+/**
+ * @brief       Get RGB HFoV from 5voxel device
+ * @warning     Call this function after voxel3d_rgb_init() is completed and successfully,
+ *              otherwise, it returns false
+ * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
+ *                      initialize the 1st scanned device
+ * @return      > 0: calculated RGB HFoV
+ * @return      <=0: failed to get RGB HFoV
+ */
+extern "C" VOXEL3D_API_DLL float voxel3d_rgb_get_hfov(char* dev_sn);
+
+
+/**
+ * @brief       Get RGB VFoV from 5voxel device
+ * @warning     Call this function after voxel3d_rgb_init() is completed and successfully,
+ *              otherwise, it returns false
+ * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
+ *                      initialize the 1st scanned device
+ * @return      > 0: calculated RGB VFoV
+ * @return      <=0: failed to get RGB VFoV
+ */
+extern "C" VOXEL3D_API_DLL float voxel3d_rgb_get_vfov(char* dev_sn);
 
 
 /**

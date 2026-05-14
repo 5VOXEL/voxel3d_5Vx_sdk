@@ -2,7 +2,7 @@
  @file      voxel3d_app.cpp
  @brief     5HiRab ToF camera example
  @author    Yushan Chen
- @copyright Copyright (c) 2025 5Voxel Co., Ltd.
+ @copyright Copyright (c) 2026 5Voxel Co., Ltd.
  */
 
 #include <stdio.h>
@@ -27,7 +27,7 @@
 #include "voxel3d_vd55h1_info.h"
 
 #define TOOLS_VER_MAJOR         (1)
-#define TOOLS_VER_MINOR         (13)
+#define TOOLS_VER_MINOR         (14)
 
 #ifdef PLAT_WINDOWS
 #define M_PI                    (3.141592653589793f)
@@ -61,8 +61,6 @@ static int      m_doRectify = RectifyType::NONE;
 
 static int      track_mouse_position = 1;
 static int      mouse_x = 0, mouse_y = 0;
-
-static bool     m_undistort = false;
 
 using namespace std;
 using namespace cv;
@@ -288,11 +286,6 @@ static void mainloop(char* dev_sn)
                 }
                 break;
             }
-            case 'c':
-            {
-                m_undistort ^= 1;
-                break;
-            }
             case 'e':
             {
                 int result;
@@ -476,7 +469,7 @@ static void mainloop(char* dev_sn)
         }
 
         if (found_tof_device) {
-            unsigned int ret = voxel3d_tof_queryframe(dev_sn, depth.ptr<unsigned short>(0), conf.ptr<unsigned short>(0), m_undistort);
+            unsigned int ret = voxel3d_tof_queryframe(dev_sn, depth.ptr<unsigned short>(0), conf.ptr<unsigned short>(0));
             if (ret) {
                 tof_frame_count = ret;
                 voxel3d_tof_generatePointCloud(
@@ -812,7 +805,11 @@ int main(int argc, char **argv)
                 width = voxel3d_rgb_get_width(dev_sn);
                 printf("\tDefault frame width : %d\n", width);
                 height = voxel3d_rgb_get_height(dev_sn);
-                printf("\tDefault frame height : %d\n\n", height);
+                printf("\tDefault frame height : %d\n", height);
+                hfov = voxel3d_rgb_get_hfov(dev_sn);
+                printf("\tHFoV : %.2f (%.1f degree)\n", hfov, hfov * 180 / M_PI);
+                vfov = voxel3d_rgb_get_vfov(dev_sn);
+                printf("\tVFoV : %.2f (%.1f degree)\n\n", vfov, vfov * 180 / M_PI);
             }
 
             result = voxel3d_lepton3_init(dev_sn);
