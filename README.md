@@ -8,7 +8,7 @@ Library and utilities for working with 5Voxel 5VSTDON & 5VHiRab 3D-ToF Camera
 # Windows
 Usage: voxel3d_tools.exe [options]  
   
-Version 1.13  
+Version 1.14  
 Options:  
 &emsp;-h | --help&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Print this message  
 &emsp;-C | --calib_save&emsp;&emsp;&emsp;Save calibration data to bin file [5VSTDON only]  
