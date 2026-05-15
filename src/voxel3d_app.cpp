@@ -344,53 +344,6 @@ static void mainloop(char* dev_sn)
             case 'i':
                 display_imu ^= 1;
                 break;
-            case 'I':
-            {
-                unsigned short reg_addr;
-                unsigned char rw_type;
-                int data_len = 1, ret = 0;
-                unsigned char rw_data[8];
-
-                memset(rw_data, 0x0, sizeof(rw_data));
-                cout << "Enter 1 (read) or 2 (write): ";
-                cin >> rw_type;
-                cout << "\nEnter register address (Hex): ";
-                cin >> hex >> reg_addr;
-                cout << "\nEnter length: ";
-                cin >> data_len;
-                switch (rw_type) {
-                case '1':
-                    ret = voxel3d_tof_sensor_i2c_read(dev_sn, reg_addr, data_len, (char *)rw_data);
-                    if (ret > 0) {
-                        printf("\n");
-                        for (int ix = data_len - 1; ix >= 0; ix--) {
-                            printf("0x%02X ", rw_data[ix]);
-                        }
-                        printf("\n");
-                    }
-                    else {
-                        printf("sensor i2c read error (%d)\n", ret);
-                    }
-                    break;
-                case '2':
-                    printf("\nLSB first");
-                    for (int ix = 0; ix < data_len; ix++) {
-                        printf("\nEnter byte-%d (Hex): ", ix);
-                        scanf("%02hhX", &rw_data[ix]);
-                    }
-                    ret = voxel3d_tof_sensor_i2c_write(dev_sn, reg_addr, data_len, (char *)rw_data);
-                    if (ret > 0) {
-                        printf("sensor i2c write successfully\n");
-                    }
-                    else {
-                        printf("sensor i2c write error (%d)\n", ret);
-                    }
-                    break;
-                default:
-                    printf("wrong input %c (0x%02X)\n", rw_type, rw_type);
-                }
-                break;
-            }
             case 'k':
             {
                 int var1, var2;

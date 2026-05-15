@@ -56,10 +56,7 @@ var searchData=
   ['voxel3d_5ftof_5fread_5fcalibration_5fraw_53',['voxel3d_tof_read_calibration_raw',['../voxel3d_8h.html#a39cc44984e3a2345c795e475c978f2e7',1,'voxel3d.h']]],
   ['voxel3d_5ftof_5fread_5fcamera_5finfo_54',['voxel3d_tof_read_camera_info',['../voxel3d_8h.html#ab418c8871f8b3aaa0677edbb51e00128',1,'voxel3d.h']]],
   ['voxel3d_5ftof_5frelease_55',['voxel3d_tof_release',['../voxel3d_8h.html#a6044fced2574f2e97f70a98bd0b58340',1,'voxel3d.h']]],
-  ['voxel3d_5ftof_5fsensor_5fi2c_5fread_56',['voxel3d_tof_sensor_i2c_read',['../voxel3d_8h.html#a9b726fedd926568bdc6c467ec2b2e09b',1,'voxel3d.h']]],
-  ['voxel3d_5ftof_5fsensor_5fi2c_5fwrite_57',['voxel3d_tof_sensor_i2c_write',['../voxel3d_8h.html#a6b8ec68c50d23e18fd685b61637fb7b5',1,'voxel3d.h']]],
-  ['voxel3d_5ftof_5fset_5fcaps_58',['voxel3d_tof_set_caps',['../voxel3d_8h.html#a7b3eb97e63b8eb89bf99edaf88955e73',1,'voxel3d.h']]],
-  ['voxel3d_5ftof_5fwrite_5fcalibration_5fraw_59',['voxel3d_tof_write_calibration_raw',['../voxel3d_8h.html#a8326487de37f1086ad0f5d87b35825b6',1,'voxel3d.h']]],
-  ['voxel3d_5fvd55h1_5finfo_2ecpp_60',['voxel3d_vd55h1_info.cpp',['../voxel3d__vd55h1__info_8cpp.html',1,'']]],
-  ['voxel3d_5fvd55h1_5finfo_2eh_61',['voxel3d_vd55h1_info.h',['../voxel3d__vd55h1__info_8h.html',1,'']]]
+  ['voxel3d_5ftof_5fset_5fcaps_56',['voxel3d_tof_set_caps',['../voxel3d_8h.html#a7b3eb97e63b8eb89bf99edaf88955e73',1,'voxel3d.h']]],
+  ['voxel3d_5fvd55h1_5finfo_2ecpp_57',['voxel3d_vd55h1_info.cpp',['../voxel3d__vd55h1__info_8cpp.html',1,'']]],
+  ['voxel3d_5fvd55h1_5finfo_2eh_58',['voxel3d_vd55h1_info.h',['../voxel3d__vd55h1__info_8h.html',1,'']]]
 ];

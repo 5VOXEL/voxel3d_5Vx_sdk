@@ -498,56 +498,6 @@ extern "C" VOXEL3D_API_DLL int voxel3d_tof_read_calibration_raw(char* dev_sn, ch
 
 
 /**
- * @brief       Program ToF Calibration RAW data into 5voxel 5VSTDON device
- * @note        For development only
- * @warning     This API supports only 5VSTDON
- * @warning     Call this function after voxel3d_tof_init() is completed and successfully,
- *              otherwise, it returns false.
- * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
- *                      initialize the 1st scanned device
- * @param[out]  raw: pointer of user-allocated buffer for calibration data storage
- * @param[in]   raw_len: length of calibration data to be read (max: 8192 [8KBytes])
- * @return      > 0: read successfully
- * @return      <=0: failed to read data from device
- */
-extern "C" VOXEL3D_API_DLL int voxel3d_tof_write_calibration_raw(char* dev_sn, char* raw, int raw_len);
-
-
-/**
- * @brief       Program ToF sensor i2c write to 5voxel 5VSTDON device
- * @note        For development only
- * @warning     This API supports only 5VSTDON
- * @warning     Call this function after voxel3d_tof_init() is completed and successfully,
- *              otherwise, it returns false.
- * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
- *                      initialize the 1st scanned device
- * @param[in]   reg_addr: 16-bit register address for i2c write
- * @param[in]   len: data length for i2c write (max=8 [8Bytes])
- * @param[in]   wr_data: pointer of the data to be written to sensor
- * @return      > 0: read successfully
- * @return      <=0: failed to read data from device
- */
-extern "C" VOXEL3D_API_DLL int voxel3d_tof_sensor_i2c_write(char* dev_sn, int reg_addr, int len, char* wr_data);
-
-
-/**
- * @brief       Program ToF sensor i2c write to 5voxel 5VSTDON device
- * @note        For development only
- * @warning     This API supports only 5VSTDON
- * @warning     Call this function after voxel3d_tof_init() is completed and successfully,
- *              otherwise, it returns false.
- * @param[in]   dev_sn: device S/N. Input S/N with NULL pointer or empty string will
- *                      initialize the 1st scanned device
- * @param[in]   reg_addr: 16-bit register address for i2c write
- * @param[in]   len: data length for i2c write (max=8 [8Bytes])
- * @param[out]  rd_data: pointer of the user-allocated buffer for data read
- * @return      > 0: read successfully
- * @return      <=0: failed to read data from device
- */
-extern "C" VOXEL3D_API_DLL int voxel3d_tof_sensor_i2c_read(char* dev_sn, int reg_addr, int len, char* rd_data);
-
-
-/**
  * @brief       Perform the initialization of RGB on 5Voxel device
  * @warning     This function has to be called before voxel3d_rgb_queryframe(),
  *              otherwise the query will fail

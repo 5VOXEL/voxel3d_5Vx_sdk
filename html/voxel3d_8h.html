@@ -287,15 +287,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a39cc44984e3a2345c795e475c978f2e7" id="r_a39cc44984e3a2345c795e475c978f2e7"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39cc44984e3a2345c795e475c978f2e7">voxel3d_tof_read_calibration_raw</a> (char *dev_sn, char *raw, int raw_len)</td></tr>
 <tr class="memdesc:a39cc44984e3a2345c795e475c978f2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ToF Calibration RAW data from 5voxel 5VSTDON device.  <br /></td></tr>
 <tr class="separator:a39cc44984e3a2345c795e475c978f2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8326487de37f1086ad0f5d87b35825b6" id="r_a8326487de37f1086ad0f5d87b35825b6"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8326487de37f1086ad0f5d87b35825b6">voxel3d_tof_write_calibration_raw</a> (char *dev_sn, char *raw, int raw_len)</td></tr>
-<tr class="memdesc:a8326487de37f1086ad0f5d87b35825b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program ToF Calibration RAW data into 5voxel 5VSTDON device.  <br /></td></tr>
-<tr class="separator:a8326487de37f1086ad0f5d87b35825b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8ec68c50d23e18fd685b61637fb7b5" id="r_a6b8ec68c50d23e18fd685b61637fb7b5"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b8ec68c50d23e18fd685b61637fb7b5">voxel3d_tof_sensor_i2c_write</a> (char *dev_sn, int reg_addr, int len, char *wr_data)</td></tr>
-<tr class="memdesc:a6b8ec68c50d23e18fd685b61637fb7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program ToF sensor i2c write to 5voxel 5VSTDON device.  <br /></td></tr>
-<tr class="separator:a6b8ec68c50d23e18fd685b61637fb7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b726fedd926568bdc6c467ec2b2e09b" id="r_a9b726fedd926568bdc6c467ec2b2e09b"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b726fedd926568bdc6c467ec2b2e09b">voxel3d_tof_sensor_i2c_read</a> (char *dev_sn, int reg_addr, int len, char *rd_data)</td></tr>
-<tr class="memdesc:a9b726fedd926568bdc6c467ec2b2e09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program ToF sensor i2c write to 5voxel 5VSTDON device.  <br /></td></tr>
-<tr class="separator:a9b726fedd926568bdc6c467ec2b2e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe5e1fd4006fc93c9999e9ae6e51646b" id="r_afe5e1fd4006fc93c9999e9ae6e51646b"><td class="memItemLeft" align="right" valign="top">VOXEL3D_API_DLL int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5e1fd4006fc93c9999e9ae6e51646b">voxel3d_rgb_init</a> (char *dev_sn)</td></tr>
 <tr class="memdesc:afe5e1fd4006fc93c9999e9ae6e51646b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the initialization of RGB on 5Voxel device.  <br /></td></tr>
 <tr class="separator:afe5e1fd4006fc93c9999e9ae6e51646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2159,104 +2150,6 @@ Call this function after <a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2"
 
 </div>
 </div>
-<a id="a9b726fedd926568bdc6c467ec2b2e09b" name="a9b726fedd926568bdc6c467ec2b2e09b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b726fedd926568bdc6c467ec2b2e09b">&#9670;&#160;</a></span>voxel3d_tof_sensor_i2c_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VOXEL3D_API_DLL int voxel3d_tof_sensor_i2c_read </td>
-          <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dev_sn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reg_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>len</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>rd_data</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Program ToF sensor i2c write to 5voxel 5VSTDON device. </p>
-<dl class="section note"><dt>Note</dt><dd>For development only </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This API supports only 5VSTDON </dd>
-<dd>
-Call this function after <a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2" title="Perform the initialization of ToF on sepcific 5Voxel device.">voxel3d_tof_init()</a> is completed and successfully, otherwise, it returns false. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg_addr</td><td>16-bit register address for i2c write </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length for i2c write (max=8 [8Bytes]) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rd_data</td><td>pointer of the user-allocated buffer for data read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&gt; 0: read successfully </dd>
-<dd>
-&lt;=0: failed to read data from device </dd></dl>
-
-</div>
-</div>
-<a id="a6b8ec68c50d23e18fd685b61637fb7b5" name="a6b8ec68c50d23e18fd685b61637fb7b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8ec68c50d23e18fd685b61637fb7b5">&#9670;&#160;</a></span>voxel3d_tof_sensor_i2c_write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VOXEL3D_API_DLL int voxel3d_tof_sensor_i2c_write </td>
-          <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dev_sn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reg_addr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>len</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>wr_data</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Program ToF sensor i2c write to 5voxel 5VSTDON device. </p>
-<dl class="section note"><dt>Note</dt><dd>For development only </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This API supports only 5VSTDON </dd>
-<dd>
-Call this function after <a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2" title="Perform the initialization of ToF on sepcific 5Voxel device.">voxel3d_tof_init()</a> is completed and successfully, otherwise, it returns false. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg_addr</td><td>16-bit register address for i2c write </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length for i2c write (max=8 [8Bytes]) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wr_data</td><td>pointer of the data to be written to sensor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&gt; 0: read successfully </dd>
-<dd>
-&lt;=0: failed to read data from device </dd></dl>
-
-</div>
-</div>
 <a id="a7b3eb97e63b8eb89bf99edaf88955e73" name="a7b3eb97e63b8eb89bf99edaf88955e73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b3eb97e63b8eb89bf99edaf88955e73">&#9670;&#160;</a></span>voxel3d_tof_set_caps()</h2>
 
@@ -2300,49 +2193,6 @@ Call this function after <a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2"
 <dl class="section return"><dt>Returns</dt><dd>&gt; 0: set values successfully </dd>
 <dd>
 &lt; 0: failed to set values </dd></dl>
-
-</div>
-</div>
-<a id="a8326487de37f1086ad0f5d87b35825b6" name="a8326487de37f1086ad0f5d87b35825b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8326487de37f1086ad0f5d87b35825b6">&#9670;&#160;</a></span>voxel3d_tof_write_calibration_raw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VOXEL3D_API_DLL int voxel3d_tof_write_calibration_raw </td>
-          <td>(</td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>dev_sn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>raw</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>raw_len</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Program ToF Calibration RAW data into 5voxel 5VSTDON device. </p>
-<dl class="section note"><dt>Note</dt><dd>For development only </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This API supports only 5VSTDON </dd>
-<dd>
-Call this function after <a class="el" href="#aef0c4e99033420b53e6be66fdc86e1c2" title="Perform the initialization of ToF on sepcific 5Voxel device.">voxel3d_tof_init()</a> is completed and successfully, otherwise, it returns false. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dev_sn</td><td>device S/N. Input S/N with NULL pointer or empty string will initialize the 1st scanned device </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">raw</td><td>pointer of user-allocated buffer for calibration data storage </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw_len</td><td>length of calibration data to be read (max: 8192 [8KBytes]) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&gt; 0: read successfully </dd>
-<dd>
-&lt;=0: failed to read data from device </dd></dl>
 
 </div>
 </div>
